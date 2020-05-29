@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
+@media (max-width: 767px) {
+width: 100%;
+}
+
 body{
   font-family: "Roboto condensed";
 }
 
 h1 {
 font-family: "Roboto";  
+}
+
+h1 i{
+  text-decoration: underline;
 }
 
 .gauche  {
@@ -67,7 +75,7 @@ color: black;
 }
 
 .reseau{
-  font-weight: normal;
+  font-weight: bold;
   color : black;
   text-align:left;
   position: relative;
@@ -76,20 +84,52 @@ color: black;
 
 .social{
   text-decoration: none;
-  font-size: 76%;
+  font-size: 66%;
 }
 
-.what-i-do{
-  background: #F7F7F7;
+#what-i-do{
+  background:#F7F7F7;
+  height: 650px;
 }
 
 .content-titre1{
   display: flex;
+  text-align: center;
   justify-content: center;
-  text-align: center;
+  position: relative;
+  top:100px;
+  align-items: center
 }
 
-.content-titre2{
-  text-align: center;
+.titre3{
+  font-size: 200%;
 }
 
+.box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.card{
+  min-width: 300px;
+  position: relative;
+  width: 30%;
+  height: calc(300px - 30px);
+  background: #ff0;
+  float: left;
+  margin: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  }
+
+.box .card .mini-card{
+  position: relative;
+  top: 20%;
+}
+
+.mini-card{
+  color : #333333;
+}

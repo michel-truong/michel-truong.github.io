@@ -84,12 +84,13 @@ color: black;
 
 .social{
   text-decoration: none;
-  font-size: 65%;
+  font-size: 66%;
 }
 
 #what-i-do{
   background:#F7F7F7;
-  height: 650px;
+  padding-top: 2%;
+  padding-bottom: 15%;
 }
 
 .content-titre1{
@@ -98,11 +99,20 @@ color: black;
   justify-content: center;
   position: relative;
   top:100px;
-  align-items: center
 }
 
 .titre3{
-  font-size: 200%;
+  font-size: 350%;
+  text-align: center;
+  font-weight: normal;
+}
+
+.content-titre2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top:20px;
 }
 
 .box{
@@ -117,12 +127,12 @@ flex-wrap: wrap;
   position: relative;
   width: 30%;
   height: calc(300px - 30px);
-  background: #ff0;
+  background: white;
   float: left;
-  margin: 8px;
+  margin: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 2px;
   }
 
 .box .card .mini-card{
@@ -131,5 +141,118 @@ flex-wrap: wrap;
 }
 
 .mini-card{
-  color : #333333;
+  color: #333333;
+}
+
+#work{
+  padding-bottom: 20%;
+}
+
+.wrapper {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  margin: 100px 90px -10px;
+  margin-top: 100px;
+}
+
+.wrapper > * {
+  padding: 10px; 
+  flex: 1 100%;
+}
+
+.aside-1 {
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  color: white;
+}
+
+img{
+  width: 330px;
+}
+
+.aside-2 {
+  background: #F8E226;
+  padding: 60px; 
+  flex: 1;
+}
+ 
+  .aside-1 {
+    order :1; 
+  }
+  .aside-2 {
+    order :1;
+}
+
+.site-wordpress{
+  font-size: 100%;
+}
+
+.nom-projet-1{
+  color: black;
+  font-weight: bold;
+  font-size: 200%;
+  
+}
+
+.bouton{
+  background-color: white;
+  text-decoration : none; 
+  padding: 13px 35px 13px;
+  font-weight: bold;
+  position: relative;
+  top: 22px
+}
+
+.bouton:hover{
+  background-color: #3C00DA;
+  color: white
+}
+
+#Who{
+  background:#F7F7F7;
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    flex: 1;
+    display:flex;
+    margin: 0px 0px 0px 0px ;
+    margin-bottom: 100px;
+  }
+}
+
+.content-life{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left:15%;
+  padding-right:15%;
+}
+
+#footer{
+  background: #3C00DA;
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+
+.info-element{
+  font-size: 30px;
+  color: white;
+  padding-left: 17%;
+}
+
+.texte-info{
+  font-size: 20px;
 }
